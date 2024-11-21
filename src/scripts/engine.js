@@ -1,20 +1,20 @@
 const emojis = [
-    "😺",
-    "😺",
-    "🦝",
-    "🦝",
-    "🦊",
-    "🦊",
-    "🐶",
-    "🐶",
-    "🐵",
-    "🐵",
-    "🦁",
-    "🦁",
-    "🐯",
-    "🐯",
-    "🐮",
-    "🐮",
+    "balon.jpg",
+    "balon.jpg",
+    "boat.jpg",
+    "boat.jpg",
+    "doce.jpg",
+    "doce.jpg",
+    "elephant.jpg",
+    "elephant.jpg",
+    "helicopter.jpg",
+    "helicopter.jpg",
+    "robot.jpg",
+    "robot.jpg",
+    "tambor.jpg",
+    "tambor.jpg",
+    "vase.jpg",
+    "vase.jpg",
 ];
 
 let openCards = [];
@@ -24,9 +24,14 @@ let shuffleEmojis = emojis.sort(()=> (Math.random() > 0.5 ? 2 : -1));
 for (let i = 0; i < emojis.length; i++){
     let box = document.createElement("div");
     box.className = "item";
-    box.innerHTML = shuffleEmojis[i];
+    
+    let img = document.createElement("img");
+    img.src = `./src/images/${shuffleEmojis[i]}`;
+    box.appendChild(img);
+    
     box.onclick = handleClick;
     document.querySelector(".game").appendChild(box);
+    
 }
 
 function handleClick(){

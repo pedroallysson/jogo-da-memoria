@@ -50,8 +50,8 @@ h2{
 }
 
 .game{
-    width: 430px;
-    height: 430px;
+    width: 830px;
+    height: 830px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -61,13 +61,13 @@ h2{
 
 .item{
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    
+
     font-size: 3em;
     transform: rotateY(180deg);
     transition: 0.25s;
@@ -90,4 +90,11 @@ h2{
 .boxOpen::after,
 .boxMatch::after{
     transform: rotateY(180deg);
+}
+
+img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+    object-position: center;
 }
