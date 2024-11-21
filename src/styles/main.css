@@ -1,3 +1,5 @@
+@import url(reset.css);
+
 body{
     display: flex;
     justify-content: center;
@@ -29,6 +31,9 @@ h2{
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .reset{
