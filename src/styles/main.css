@@ -5,8 +5,12 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #fc1e8a;
+    /* background-color: #fc1e8a; */
     user-select: none;
+    flex-direction: column;
+    background-image: url('../images/fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -18,15 +22,16 @@ body{
     gap: 30px;
     background: linear-gradient(
         325deg,
-        #03001e 0%,
-        #7303c0 30%,
-        #ec38bc 70%,
-        #fdeff9 100%
+        #047cc5 0%,
+        #0389cd 30%,
+        #01bbee 70%,
+        #00d4ff 100%
     );
     padding: 40px 60px;
 }
 
 h2{
+    margin-bottom: 30px;
     font-size: 3em;
     color: #ffffff;
     text-transform: uppercase;
